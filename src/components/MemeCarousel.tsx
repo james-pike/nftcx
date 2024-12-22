@@ -13,8 +13,8 @@ export default component$(() => {
   });
 
   return (
-    <Carousel.Root class="carousel-root max-w-6xl mx-auto px-2" draggable={false} autoPlayIntervalMs={2000}
-    bind:autoplay={isPlaying} slidesPerView={isMobile.value ? 2 : 4} gap={8}>
+    <Carousel.Root class="carousel-root rounded-xl max-w-6xl mx-auto px-2" draggable={false} autoPlayIntervalMs={2000}
+    bind:autoplay={isPlaying} slidesPerView={isMobile.value ? 1 : 1} gap={8}>
     
       <Carousel.Scroller class="carousel-scroller">
           {/* Carousel slides */}
