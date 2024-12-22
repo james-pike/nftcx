@@ -13,14 +13,14 @@ export default component$(() => {
   });
 
   return (
-    <Carousel.Root class="carousel-root rounded-xl max-w-6xl mx-auto px-2" draggable={false} autoPlayIntervalMs={2000}
+    <Carousel.Root class="carousel-root max-w-6xl mx-auto px-0" draggable={false} autoPlayIntervalMs={2000}
     bind:autoplay={isPlaying} slidesPerView={isMobile.value ? 1 : 1} gap={8}>
     
-      <Carousel.Scroller class="carousel-scroller">
+      <Carousel.Scroller class="carousel-scroller ">
           {/* Carousel slides */}
           {images.map((image, index) => (
-          <Carousel.Slide key={image} class="carousel-slide">
-            <img src={`/images/${image}`} alt={`Meme ${index + 1}`} />
+          <Carousel.Slide key={image} class="carousel-slide ">
+            <img height={500} width={500} src={`/images/${image}`} alt={`Meme ${index + 1}`} />
           </Carousel.Slide>
         ))}
       </Carousel.Scroller>

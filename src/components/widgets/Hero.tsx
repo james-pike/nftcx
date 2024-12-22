@@ -7,7 +7,7 @@ export default component$(() => {
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-10">
         <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-        <div class="pt-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
+        <div class="pt-8 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
           <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
               $Froppy <br class="hidden lg:block" />{" "}
@@ -18,21 +18,29 @@ export default component$(() => {
                 Join the fun with <span class="font-semibold">Froppy</span>—the hottest memecoin on the Kaspa chain. Fast, fun, and ready for the next big trend.
               </p>
 
-              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">
-                <div class="flex w-full sm:w-auto">
-                  <a
-                    class="bg-sky-200 dark:bg-sky-400 btn sm:mb-0 w-full"
-                    href="/"
-                    
-                    
-                  >
-                    Get Froppy
-                  </a>
-                </div>
-                <div class="flex w-full sm:w-auto">
-                  <button class="btn w-full bg-red-200 dark:bg-red-400 ">Join Community</button>
-                </div>
-              </div>
+              <div class=" sm:max-w-md m-auto grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-7xl">
+    <div class="flex w-full">
+        <a class="bg-sky-200 dark:bg-sky-400 btn w-full" href="/">
+            Get Froppy
+        </a>
+    </div>
+    <div class="flex w-full">
+        <button class="btn w-full bg-red-200 rounded-xl dark:bg-red-400">
+            Join Community
+        </button>
+    </div>
+    <div class="flex w-full">
+        <button class="btn w-full bg-green-200 rounded-xl dark:bg-green-400">
+            Discover More
+        </button>
+    </div>
+    <div class="flex w-full">
+        <button class="btn w-full bg-yellow-200 rounded-xl dark:bg-yellow-400">
+            Contact Us
+        </button>
+    </div>
+</div>
+
             </div>
           </div>
           
