@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import { Image } from "@unpic/qwik";
 import MemeCarousel from "../MemeCarousel";
 
 export default component$(() => {
