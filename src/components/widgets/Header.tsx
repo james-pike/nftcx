@@ -30,7 +30,7 @@ export default component$(() => {
       }}
     >
       <div class="absolute inset-0"></div>
-      <div class="relative text-default py-3 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
+      <div class="relative text-default pt-3 pb-2 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
         <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
           <a class="flex items-center" href={"/"}>
             <Logo />
