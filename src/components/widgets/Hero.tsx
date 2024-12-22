@@ -21,22 +21,22 @@ export default component$(() => {
               <div class=" sm:max-w-md m-auto grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:max-w-7xl">
     <div class="flex w-full">
         <a class="bg-sky-200 dark:bg-sky-400 btn w-full" href="/">
-            Get Froppy
+            Buy Froppy
         </a>
     </div>
     <div class="flex w-full">
         <button class="btn w-full bg-red-200 rounded-xl dark:bg-red-400">
-            Join Community
+            Join Telegram
         </button>
     </div>
     <div class="flex w-full">
         <button class="btn w-full bg-green-200 rounded-xl dark:bg-green-400">
-            Discover More
+            Share on X
         </button>
     </div>
     <div class="flex w-full">
         <button class="btn w-full bg-yellow-200 rounded-xl dark:bg-yellow-400">
-            Contact Us
+            Partnerships
         </button>
     </div>
 </div>
