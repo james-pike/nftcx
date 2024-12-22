@@ -14,7 +14,7 @@ export default component$(() => {
   });
 
   return (
-    <Carousel.Root class="carousel-root max-w-6xl mx-auto"  autoPlayIntervalMs={2000}
+    <Carousel.Root class="carousel-root max-w-6xl mx-auto" draggable={false} autoPlayIntervalMs={2000}
     bind:autoplay={isPlaying} slidesPerView={isMobile.value ? 2 : 4} gap={20}>
       <div class="carousel-buttons">
         <Carousel.Previous>Prev</Carousel.Previous>
