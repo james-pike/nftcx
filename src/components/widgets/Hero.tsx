@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { Image } from "@unpic/qwik";
+import MemeCarousel from "../MemeCarousel";
 
 export default component$(() => {
   return (
@@ -39,8 +39,8 @@ export default component$(() => {
  
 
 
-          <div class="basis-1/2 -mt-10">
-  <Image
+          <div class="basis-1/2 ">
+  {/* <Image
     src="/images/froppy.png"
     layout="intrinsic" 
     width={443.7}
@@ -49,7 +49,8 @@ export default component$(() => {
     class="mx-auto lg:mr-0 w-full max-w-[90%] sm:max-w-[70%] drop-shadow-2xl rounded-md"
     priority={true}
     breakpoints={[320, 480, 640, 768, 1024]}
-  />
+  /> */}
+  <MemeCarousel/>
 </div>
 
         </div>
