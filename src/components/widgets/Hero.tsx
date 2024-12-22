@@ -40,17 +40,18 @@ export default component$(() => {
 
 
           <div class="basis-1/2 -mt-10">
-            <Image
-              src="/images/froppy.png"
-              layout="constrained"
-              width={443.7}
-              height={554.4}
-              alt="Kroppy Hero Image (Fun Dog)"
-              class="mx-auto lg:mr-0 w-full drop-shadow-2xl rounded-md"
-              priority={true}
-              breakpoints={[320, 480, 640, 768, 1024]}
-            />
-          </div>
+  <Image
+    src="/images/froppy.png"
+    layout="intrinsic" 
+    width={443.7}
+    height={554.4}
+    alt="Kroppy Hero Image (Fun Dog)"
+    class="mx-auto lg:mr-0 w-full max-w-[90%] sm:max-w-[70%] drop-shadow-2xl rounded-md"
+    priority={true}
+    breakpoints={[320, 480, 640, 768, 1024]}
+  />
+</div>
+
         </div>
       </div>
 

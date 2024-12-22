@@ -10,16 +10,12 @@ export default component$(() => {
   useVisibleTask$(() => {
     isPlaying.value = true;
     isMobile.value = window.innerWidth <= 768; // Consider 768px or less as mobile
-
   });
 
   return (
-    <Carousel.Root class="carousel-root max-w-6xl mx-auto" draggable={false} autoPlayIntervalMs={2000}
-    bind:autoplay={isPlaying} slidesPerView={isMobile.value ? 2 : 4} gap={20}>
-      <div class="carousel-buttons">
-        <Carousel.Previous>Prev</Carousel.Previous>
-        <Carousel.Next>Next</Carousel.Next>
-      </div>
+    <Carousel.Root class="carousel-root max-w-6xl mx-auto px-2" draggable={false} autoPlayIntervalMs={2000}
+    bind:autoplay={isPlaying} slidesPerView={isMobile.value ? 2 : 4} gap={8}>
+    
       <Carousel.Scroller class="carousel-scroller">
           {/* Carousel slides */}
           {images.map((image, index) => (
@@ -35,6 +31,10 @@ export default component$(() => {
           </Carousel.Bullet>
         ))}
       </Carousel.Pagination>
+      <div class="carousel-buttons">
+        <Carousel.Previous>Prev</Carousel.Previous>
+        <Carousel.Next>Next</Carousel.Next>
+      </div>
     </Carousel.Root>
   );
 });

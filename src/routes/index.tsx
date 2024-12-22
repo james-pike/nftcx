@@ -18,7 +18,7 @@ export default component$(() => {
       <Hero />
       <Features
         highlight="It's all about the memes"
-        title="Share Froggy with your friends!"
+        title="Share Froppy with your friends!"
         // subtitle="The best memes will be featured."
        
       />
