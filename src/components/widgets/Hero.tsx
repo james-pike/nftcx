@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import MemeCarousel from "../MemeCarousel";
+import { Image } from "@unpic/qwik";
 
 export default component$(() => {
   return (
@@ -7,7 +7,7 @@ export default component$(() => {
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-10">
         <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-        <div class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
+        <div class="pt-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
           <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
               $Froppy <br class="hidden lg:block" />{" "}
@@ -40,17 +40,16 @@ export default component$(() => {
 
 
           <div class="basis-1/2 -mt-10">
-            {/* <Image
+            <Image
               src="/images/froppy.png"
               layout="constrained"
-              width={493}
-              height={616}
+              width={443.7}
+              height={554.4}
               alt="Kroppy Hero Image (Fun Dog)"
               class="mx-auto lg:mr-0 w-full drop-shadow-2xl rounded-md"
               priority={true}
               breakpoints={[320, 480, 640, 768, 1024]}
-            /> */}
-            <MemeCarousel/>
+            />
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import CallToAction from "~/components/widgets/CallToAction";
 
 
 import { SITE } from "~/config.mjs";
+import MemeCarousel from "~/components/MemeCarousel";
 
 export default component$(() => {
   return (
@@ -21,7 +22,7 @@ export default component$(() => {
         // subtitle="The best memes will be featured."
        
       />
-       {/* <MemeCarousel/> */}
+       <MemeCarousel/>
       <Steps />
       <FAQs
         title="Frequently Asked Questions"
