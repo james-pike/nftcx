@@ -10,7 +10,7 @@ import CallToAction from "~/components/widgets/CallToAction";
 
 
 import { SITE } from "~/config.mjs";
-import MemeCarousel from "~/components/MemeCarousel";
+// import MemeCarousel from "~/components/MemeCarousel";
 
 export default component$(() => {
   return (
