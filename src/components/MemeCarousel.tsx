@@ -62,7 +62,11 @@ export default component$(() => {
           </button>
         </div>
       </div>
-
+      <blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">At dawn from the gateway to Mars, the launch of Starship’s second flight test <a href="https://t.co/ffKnsVKwG4">pic.twitter.com/ffKnsVKwG4</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw">December 7, 2023</a> <a href="https://twitter.com/intent/retweet?tweet_id=1732824684683784516" class="twitter-rt-button" data-size="large" data-text="Retweet this tweet">
+  Retweet
+</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </Carousel.Root>
   );
 });
+
+
