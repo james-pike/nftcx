@@ -25,14 +25,14 @@ export default component$(() => {
   });
 
   return (
-    <Carousel.Root class="carousel-root max-w-6xl mx-auto px-0" draggable={false} autoPlayIntervalMs={2000}
+    <Carousel.Root class="carousel-root max-w-6xl mx-auto px-0" draggable={false} autoPlayIntervalMs={2500}
     bind:autoplay={isPlaying} slidesPerView={isMobile.value ? 1 : 1} gap={8}>
     
       <Carousel.Scroller class="carousel-scroller ">
           {/* Carousel slides */}
           {images.map((image, index) => (
           <Carousel.Slide key={image} class="carousel-slide ">
-            <img height={500} width={500} src={`/images/${image}`} alt={`Meme ${index + 1}`} />
+            <img height={400} width={400} src={`/images/${image}`} alt={`Meme ${index + 1}`} />
           </Carousel.Slide>
         ))}
       </Carousel.Scroller>
@@ -43,7 +43,7 @@ export default component$(() => {
           </Carousel.Bullet>
         ))}
       </Carousel.Pagination> */}
-  <div class="carousel-buttons flex justify-between items-center w-full p-4">
+  <div class="carousel-buttons flex justify-between bg-blue-500 items-center w-full p-4">
   <div class="flex items-center space-x-4">
     {/* Left buttons for navigation */}
     <Carousel.Previous>Prev</Carousel.Previous>
