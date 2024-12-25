@@ -1,21 +1,21 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-// import Hero from "~/components/widgets/Hero";
-// import Features from "~/components/widgets/Features";
-// import Steps from "~/components/widgets/Steps";
-// import FAQs from "~/components/widgets/FAQs";
-// import Stats from "~/components/widgets/Stats";
-// import CallToAction from "~/components/widgets/CallToAction";
+import Hero from "~/components/widgets/Hero";
+import Features from "~/components/widgets/Features";
+import Steps from "~/components/widgets/Steps";
+import FAQs from "~/components/widgets/FAQs";
+import Stats from "~/components/widgets/Stats";
+import CallToAction from "~/components/widgets/CallToAction";
 
 
 import { SITE } from "~/config.mjs";
-// import MemeCarousel from "~/components/MemeCarousel";
+import MemeCarousel from "~/components/MemeCarousel";
 
 export default component$(() => {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <div class="g-container">
     <svg class="g-svg" width="400" height="160" xmlns="http://www.w3.org/2000/svg">
         <path id="svgpath" d="M 350 40 C 1200 1000, -550 1000, 350 1960" stroke="black" fill="transparent" />
@@ -36,7 +36,7 @@ export default component$(() => {
         In summary, CSS Scroll Driven involves using CSS and JavaScript to create effects and animations that respond to the user's scrolling behavior. This technique adds interactivity and visual appeal to webpages, making them more engaging for users.
     </p>
 </div>
-      {/* <Features
+      <Features
         highlight="It's all about the memes"
         title="Share Froppy with your friends!"
         // subtitle="The best memes will be featured."
@@ -82,7 +82,7 @@ export default component$(() => {
         ]}
       />
       <Stats />
-      <CallToAction /> */}
+      <CallToAction />
     </>
   );
 });
