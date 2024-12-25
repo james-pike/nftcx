@@ -5,7 +5,7 @@ export default component$(() => {
   const images = ['meme1.jpg', 'meme2.jpg', 'meme3.jpg', 'meme4.jpg', 'meme1.jpg', 'meme2.jpg', 'meme3.jpg', 'meme4.jpg',];
   const isPlaying = useSignal<boolean>(false);
   const isMobile = useSignal<boolean>(false); // Signal to track mobile status
-  const currentSlide = useSignal<number>(0);
+  // const currentSlide = useSignal<number>(0);
 
   const retweet = $( async (tweetId: string, accessToken: string, accessSecret: string) => {
     const response = await fetch('/api/retweet', {
@@ -23,12 +23,12 @@ export default component$(() => {
   
 
 
-  const shareOnTwitter = $((image: string) => {
-    const tweetText = encodeURIComponent(`Check out this meme!`);
-    const url = encodeURIComponent(`${window.location.origin}/images/${image}`);
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${tweetText}&url=${url}`;
-    window.open(twitterUrl, '_blank');
-  });
+  // const shareOnTwitter = $((image: string) => {
+  //   const tweetText = encodeURIComponent(`Check out this meme!`);
+  //   const url = encodeURIComponent(`${window.location.origin}/images/${image}`);
+  //   const twitterUrl = `https://twitter.com/intent/tweet?text=${tweetText}&url=${url}`;
+  //   window.open(twitterUrl, '_blank');
+  // });
 
 
   useVisibleTask$(() => {
