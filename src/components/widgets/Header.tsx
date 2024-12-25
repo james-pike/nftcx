@@ -5,6 +5,7 @@ import Logo from "~/components/common/Logo";
 import ToggleTheme from "~/components/common/ToggleTheme";
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
+import { TwitterAuth } from "../TwitterButton";
 
 export default component$(() => {
   const store = useStore({
@@ -37,6 +38,7 @@ export default component$(() => {
           </a>
           <div class="flex items-center md:hidden">
             <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
+            <TwitterAuth/>
             <ToggleMenu />
           </div>
         </div>

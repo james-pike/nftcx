@@ -7,6 +7,21 @@ export default component$(() => {
   const isMobile = useSignal<boolean>(false); // Signal to track mobile status
   const currentSlide = useSignal<number>(0);
 
+  const retweet = $( async (tweetId: string, accessToken: string, accessSecret: string) => {
+    const response = await fetch('/api/retweet', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tweetId, accessToken, accessSecret }),
+    });
+  
+    if (response.ok) {
+      console.log('Retweet successful!');
+    } else {
+      console.error('Retweet failed.');
+    }
+  });
+  
+
 
   const shareOnTwitter = $((image: string) => {
     const tweetText = encodeURIComponent(`Check out this meme!`);
@@ -33,25 +48,31 @@ export default component$(() => {
           </Carousel.Slide>
         ))}
       </Carousel.Scroller>
-      <Carousel.Pagination class="carousel-pagination">
+      {/* <Carousel.Pagination class="carousel-pagination">
         {images.map((color, index) => (
           <Carousel.Bullet class="carousel-pagination-bullet" key={color}>
             {index + 1}
           </Carousel.Bullet>
         ))}
-      </Carousel.Pagination>
-      <div class="carousel-buttons">
-        <Carousel.Previous>Prev</Carousel.Previous>
-        <Carousel.Next>Next</Carousel.Next>
-        <button
-        
-            class="carousel-btn flex items-center space-x-2"
-            aria-label="Share on Twitter"
-            onClick$={() => shareOnTwitter(images[currentSlide.value])}
-          >
-            Tweet
-          </button>
-      </div>
+      </Carousel.Pagination> */}
+  <div class="carousel-buttons flex justify-between items-center w-full p-4">
+  <div class="flex items-center space-x-4">
+    {/* Left buttons for navigation */}
+    <Carousel.Previous>Prev</Carousel.Previous>
+    <Carousel.Next>Next</Carousel.Next>
+  </div>
+  <div class="flex items-center space-x-4">
+    {/* Right buttons for sharing */}
+    <button
+      class="carousel-btn flex items-center space-x-2"
+      aria-label="Share on Twitter"
+      onClick$={() => retweet}
+    >
+      Tweet
+    </button>
+  </div>
+</div>
+
     </Carousel.Root>
   );
 });
